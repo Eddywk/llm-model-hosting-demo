@@ -3,6 +3,19 @@
 requires = ["setuptools>=46.1.0", "setuptools_scm[toml]>=5"]
 build-backend = "setuptools.build_meta"
 
+[project]
+name = "llm_inference"
+authors = [
+    {name = "Eddy Wang", email = "kwangusc91@gmail.com"},
+]
+description = "My LLM inference demo package"
+readme = "README.rst"
+requires-python = ">=3.8"
+dependencies = [
+    "Flask",
+]
+dynamic = ["version"]
+
 [tool.setuptools_scm]
 # For smarter version schemes and other configuration options,
 # check out https://github.com/pypa/setuptools_scm
